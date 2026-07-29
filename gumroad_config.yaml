@@ -1,0 +1,44 @@
+# gumroad_config.yaml
+
+# api_token: "YOUR_TOKEN_HERE"   # use env var instead
+
+product:
+  name: "My Awesome Product"
+  slug: "my-awesome-product"
+  description: |
+    A complete toolkit for doing awesome things.
+
+    ## What's Included
+    - All source files
+    - Documentation
+    - Bonus materials
+  price_cents: 0
+  suggested_price_cents: 500
+  custom_summary: "A complete, well-documented toolkit."
+  tags:
+    - tools
+    - productivity
+    - templates
+  currency: "usd"
+  is_physical: false
+  require_shipping: false
+  published: true
+
+build:
+  source_dir: "product_source"
+  output_dir: "builds"
+  include_patterns:
+    - "**/*"
+  exclude_patterns:
+    - "**/__pycache__/**"
+    - "**/.DS_Store"
+    - "**/Thumbs.db"
+    - "**/*.pyc"
+    - "**/.git/**"
+    - "**/node_modules/**"
+    - "**/.env"
+  readme_template: "templates/README.md.j2"
+  changelog_template: "templates/CHANGELOG.md.j2"
+
+log_file: "logs/publish.log"
+version_file: ".version"
