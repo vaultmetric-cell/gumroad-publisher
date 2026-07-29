@@ -1,0 +1,33 @@
+# {{ name }}
+
+> {{ description }}
+
+**Version:** {{ version }}
+**Released:** {{ date }}
+**Price:** {{ price_display }}
+{% if tags %}**Tags:** {{ tags | join(", ") }}{% endif %}
+
+---
+
+## What's Included
+
+| Folder | Contents |
+|--------|----------|
+| `assets/` | All core product files |
+| `docs/` | Documentation, guides, PDFs |
+| `extras/` | Bonus files and supplemental materials |
+
+## Getting Started
+
+1. Unzip the archive
+2. Review `README.md` (this file) and `CHANGELOG.md`
+3. Explore the `assets/` folder for core content
+
+## Changelog
+
+See [`CHANGELOG.md`](./CHANGELOG.md) for full version history.
+
+---
+
+*Built and published with the Gumroad Auto-Publisher pipeline.*
+*Questions? Reach out via your Gumroad purchase receipt.*
