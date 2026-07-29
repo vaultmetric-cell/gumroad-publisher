@@ -1,0 +1,38 @@
+#  Secrets 
+.env
+*.token
+
+#  Python 
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+#  Build artifacts 
+builds/
+.version
+
+#  Logs 
+logs/
+
+#  OS artifacts 
+.DS_Store
+Thumbs.db
+desktop.ini
+
+#  IDEs 
+.idea/
+.vscode/
+*.swp
+*.swo
+
+#  Virtual envs 
+venv/
+.venv/
+env/
